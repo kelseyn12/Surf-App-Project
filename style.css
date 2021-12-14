@@ -1,9 +1,15 @@
+body {
+  background-color: rgb(196, 215, 221);
+}
+
+
 img{
     position: fixed;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -5;
+    border: 0;
     
 }
     
@@ -14,9 +20,9 @@ img{
     display: block;
     margin-block: -90px;
     position: absolute;
-    top: 58%;
+    top: 43%;
     left: 50%;
-    background-color: rgb(160, 216, 248);
+    background-color: transparent;
     color: rgb(4, 34, 80);
     font-size: 16px;
     padding: 3px 5px;
@@ -32,9 +38,26 @@ img{
 
   main {
     text-align: center;
-    
+    position: relative;
+    left: 30px;
+    margin-top: 50px;
+    color: rgb(66, 116, 133);
+
   }
   p {
-    text-align: center;
-   
+    text-align:center;
+    position: relative;
+    top:250px;
+    left: 30px;
+    color:rgb(27, 114, 143);
+    padding: 0;
+    margin: 0;
+    line-height:0;
+  
+  }
+
+  .surf{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url();
   }

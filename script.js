@@ -35,24 +35,26 @@ $.ajax(URL).then(function(currentData) {
 
 
 function render(currentData) {
-    $('main').html(`
-    <h2>Current</h2>
-        <h3>Temp: ${Math.floor(currentData.current.temp)}&deg;F</h3>
-        <h3>Wind Direction: ${Math.floor(currentData.current.wind_deg)}&deg;</h3>
-        <h3>Speed: ${Math.floor(currentData.current.wind_speed)} mph</h3>
-    `);
-
+    $('p').html(`
+    <h3>Currently</h3>
+        <h4>Temp: ${Math.floor(currentData.current.temp)}&deg;F</h4>
+        <h4>Wind Direction: ${Math.floor(currentData.current.wind_deg)}&deg;</h4>
+        <h4>Speed: ${Math.floor(currentData.current.wind_speed)} mph</h4>
+    `
+    )
 
 
 
 if (currentData.current.wind_deg >= 0 && currentData.current.wind_deg <= 25
     && currentData.current.wind_speed >= 28) {
-    alert ("There is surf today! It's glassy out there! Have fun!")
+    $('main').html(`<h2>Surf Status: Surf! It's glassy! Have fun!</h2>`);
 
     } else if (currentData.current.wind_deg >= 26 && currentData.current.wind_deg <= 45
         && currentData.current.wind_speed >= 28) {
-        alert ("There is surf today, but it's choppy! Be careful! Have fun!")
+        $('main').html(`<h2>Surf Status: Surf! Choppy. Be careful! Have fun!</h2>`);
 
     } else {
-        alert ("There's no surf today. Check back tomorrow!")
-}};
+        $('main').html(`<h2>Surf Status: None. Check back later!</h2>`);
+    }
+};
+

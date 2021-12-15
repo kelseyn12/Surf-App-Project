@@ -56,8 +56,15 @@ img{
   
   }
 
-  .surf{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url();
+@media (min-width: 600px) {
+  body {
+    font-size: 1.25rem;
   }
+}
+
+@media(min-width: 800px) {
+  body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}

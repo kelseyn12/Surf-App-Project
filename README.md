@@ -7,6 +7,8 @@ HTML
 CSS
 JavaScript
 jQuery
+Google Fonts
+OpenWater API
 
 **Screenshots**
 

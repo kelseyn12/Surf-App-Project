@@ -20,7 +20,7 @@ OpenWater API
 
 
 **Getting Started**
-http://127.0.0.1:5501/
+https://kelseyn12.github.io/Surf-App-Project/
 Click on the button and surf conditions will pop up on the screen.
 
 **Future Enhancements**

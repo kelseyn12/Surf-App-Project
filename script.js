@@ -38,7 +38,7 @@ function handleGetData(evt) {
 
 function render(currentData) {
     $('p').html(`
-    <h3>Currently</h3><br>
+    <h3>Currently at Stoney Point:</h3><br>
         <h4>Temp: ${Math.floor(currentData.current.temp)}&deg;F</h4>
         <h4>Wind Direction: ${Math.floor(currentData.current.wind_deg)}&deg;</h4>
         <h4>Speed: ${Math.floor(currentData.current.wind_speed)} mph</h4>
@@ -47,14 +47,14 @@ function render(currentData) {
 
     if (currentData.current.wind_deg >= 0 && currentData.current.wind_deg <= 25
         && currentData.current.wind_speed >= 28) {
-        $('#head').html(`<h1>Surf Status: Surf! It's glassy! Have fun!</h1>`);
+        $('#head').html(`<h1>Surf Status: Surf!<br> It's glassy! Have fun!</h1>`);
 
     } else if (currentData.current.wind_deg >= 26 && currentData.current.wind_deg <= 45
         && currentData.current.wind_speed >= 28) {
-        $('#head').html(`<h1>Surf Status: Surf! Choppy. Be careful! Have fun!</h1>`);
+        $('#head').html(`<h1>Surf Status: Surf!<br> Choppy. Be careful! Have fun!</h1>`);
 
     } else {
-        $('#head').html(`<h1>Surf Status: None. Check back later!</h1>`);
+        $('#head').html(`<h1>Surf Status: None.<br> Check back later!</h1>`);
     }
 };
 
@@ -64,27 +64,27 @@ function render(currentData) {
 
 $("#button").click(function () {
     $(this).fadeOut(1500, function () {
-        $(this).fadeIn(9000)
+        $(this).delay(6000).fadeIn(5000)
     })
 });
 
 $('p').hide()
 $('#button').click(function () {
-    $('p').fadeIn(3000, function () {
-        $('p').fadeOut(5000)
+    $('p').fadeIn(2000, function () {
+        $('p').fadeOut(9000)
     })
 });
 
 $('#head').hide()
 $('#button').click(function () {
-    $('#head').fadeIn(3000, function () {
-        $('#head').fadeOut(5000)
+    $('#head').fadeIn(2000, function () {
+        $('#head').fadeOut(9000)
     })
 });
 
 $('#button').click(function () {
-    $('.content').fadeOut(1000, function () {
-        $('.content').delay(6000).fadeIn(5000)
+    $('.content').fadeOut(800, function () {
+        $('.content').delay(6000).fadeIn(9000)
     })
 });
 });

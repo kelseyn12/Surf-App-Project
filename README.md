@@ -9,8 +9,9 @@ JavaScript
 jQuery
 
 **Screenshots**
-![Screen Shot 2021-12-16 at 4 41 56 PM](https://user-images.githubusercontent.com/94858532/146459766-3a504057-0f24-4055-be2d-858af3a412dc.png)
-![Screen Shot 2021-12-16 at 4 42 05 PM](https://user-images.githubusercontent.com/94858532/146459769-6de45b09-268e-400a-87fa-6fe537dd91bf.png)
+![Screen Shot 2021-12-16 at 8 53 22 PM](https://user-images.githubusercontent.com/94858532/146481246-8b9ca05b-70ff-49d6-a894-45e378c92fad.png)
+![Screen Shot 2021-12-16 at 8 53 37 PM](https://user-images.githubusercontent.com/94858532/146481250-2241f4e5-c905-4b8c-a687-fb8374b9618c.png)
+
 
 
 

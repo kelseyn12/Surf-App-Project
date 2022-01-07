@@ -1,5 +1,5 @@
 # Surf-App-Project
-My first GA project
+My first GA project-
 A simple web application that gathers weather data to share if there will be surf on Lake Superior, specifically at a surf location called "Stoney Point".
 
 **Technologies Used**
